@@ -1,0 +1,21 @@
+diff -up Vol-1.4.4/Makefile.in.orig Vol-1.4.4/Makefile.in
+--- Vol-1.4.4/Makefile.in.orig	2014-03-28 11:24:15.555858697 -0300
++++ Vol-1.4.4/Makefile.in	2014-03-28 11:24:42.266859720 -0300
+@@ -351,7 +351,7 @@ EXTRA_DIST = doc/ufldoc.bib doc/ufldoc.p
+ ########################################################################
+ pkgconfiglibdir = $(libdir)/pkgconfig
+ pkgconfiglib_DATA = vol.pc $(am__append_2)
+-addlibsdir = $(DESTDIR)$(datadir)/coin/doc/Vol
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ 
+ ########################################################################
+ #                         Maintainer Stuff                             #
+@@ -360,7 +360,7 @@ addlibsdir = $(DESTDIR)$(datadir)/coin/d
+ # Files that are generated and should be cleaned with make distclean
+ DISTCLEANFILES = $(am__append_4) $(VPATH_DISTCLEANFILES)
+ DocFiles = README AUTHORS LICENSE
+-DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ all: all-recursive
+ 
+ .SUFFIXES:
