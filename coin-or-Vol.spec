@@ -2,7 +2,7 @@
 %global		module		Vol
 
 Name:		coin-or-%{module}
-Group:		Applications/Engineering
+
 Summary:	Vol (Volume Algorithm)
 Version:	1.4.4
 Release:	1%{?dist}
@@ -40,7 +40,7 @@ algorithm produces only dual solutions.
 
 %package	devel
 Summary:	Development files for %{name}
-Group:		Development/Libraries
+
 Requires:	coin-or-CoinUtils-devel
 Requires:	%{name}%{?_isa} = %{version}-%{release}
 
@@ -50,7 +50,7 @@ developing applications that use %{name}.
 
 %package	doc
 Summary:	Documentation files for %{name}
-Group:		Documentation
+
 Requires:	%{name} = %{version}-%{release}
 BuildArch:	noarch
 
